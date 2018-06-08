@@ -1,0 +1,44 @@
+/** COLORS */
+$textColor     : #000000;
+$primaryColor  : #2c9942; // Dark Blue
+$secondaryColor: #0033a1; // Dark Yellow
+$darkGray      : #ADB6B5;
+$lightGray     : #f1f2f2;
+$lightblue     : #01acca;
+$lightgreen    : #83be26;
+$linkColor     : $primaryColor;
+
+$screen-lg-min: 1199px;
+$screen-lg-max: ($screen-lg-min - 1);
+$screen-md-min: 992px;
+$screen-md-max: ($screen-md-min - 1);
+$screen-sm-min: 768px;
+$screen-sm-max: ($screen-sm-min - 1);
+$screen-xsm-min: 576px;
+$screen-xsm-max: ($screen-xsm-min - 1);
+
+/** FONT SIZES */
+
+$htmlfs          : 10px; //10px
+$fsBody          : 2.2rem; // 22px
+$fsTitle         : 6rem; // 60px
+$fsH1            : 4.5rem; // 45px
+$fsH2            : 3rem; //
+$fsH3            : 2.7rem; //
+$fsH4            : $fsBody; //
+
+/** PARTIALS */
+@import "base";
+@import "header";
+@import "forms";
+@import "woocommerce";
+@import "navigation";
+@import "mobile_nav";
+@import "content";
+@import "blog";
+@import "footer";
+@import "sliders";
+@import "slides";
+@import "overrides";
+@import "ie";
+@import "responsive";

@@ -1,0 +1,309 @@
+.Contactformsection{
+    max-width: 560px;
+  form{
+    float: right;
+    padding: 30px 10px;
+    width: 100%;
+  }
+  p{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  .button{
+    padding: 10px 60px;
+    float: left;
+  }
+  .wpcf7-textarea {
+      height: 12rem;
+  }
+  select,
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  textarea {
+      height: 4.5rem;
+      margin-top: 0.25rem;
+      background-color: #F2F2F2;
+      border-color: transparent;
+      border-width: 1px;
+      color: #ADB6B5;
+      font-size: 2rem;
+      padding: 0px 10px;
+  }
+  textarea {
+      min-height: 8rem;
+  }
+  .submit-container {
+      .button {
+          padding: 10px 50px;
+          float: left;
+          clear: both;
+      }
+      > .wpcf7-form-control-wrap {
+          // outline: 1px solid #000;
+          width: 206px;
+          height: 51px;
+      }
+      .popover-recaptcha {
+          transform: scale(0.68);
+          transform-origin: 0px 0px;
+          float: left;
+          clear: both;
+      }
+  }
+  label {
+      display: block;
+      font-size: 2rem;
+      line-height: 1.5;
+      color: $darkGray;
+  }
+  ::-webkit-input-placeholder {
+      color: #ADB6B5;
+  }
+}
+select,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+textarea {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    border-radius: 0px;
+    box-shadow: none;
+    background-image: none;
+    font-family: inherit;
+    padding: 15px;
+    padding-right: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    color: #ADB6B5;
+}
+select {
+    padding: 0.3125rem;
+    cursor: pointer;
+}
+.textarea-lg {
+    height: 6rem;
+}
+::-webkit-input-placeholder {
+    color: #ADB6B5;
+}
+
+.popover-form {
+    width: 100%;
+    padding: 0px 10px;
+    margin: auto;
+    select,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="password"],
+    input[type="number"],
+    input[type="search"],
+    textarea {
+        height: 4rem;
+        margin-top: 0.25rem;
+        background-color: #F2F2F2;
+        border-color: transparent;
+        border-width: 1px;
+        color: #ADB6B5;
+        font-size: 2rem;
+        padding: 0px 10px;
+    }
+    textarea {
+        min-height: 8rem;
+    }
+    .submit-container {
+        .button {
+            padding: 10px 50px;
+            float: left;
+            clear: both;
+        }
+        > .wpcf7-form-control-wrap {
+            // outline: 1px solid #000;
+            width: 206px;
+            height: 51px;
+        }
+        .popover-recaptcha {
+            transform: scale(0.68);
+            transform-origin: 0px 0px;
+            float: left;
+            clear: both;
+        }
+    }
+    label {
+        display: block;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: $darkGray;
+    }
+    ::-webkit-input-placeholder {
+        color: #ADB6B5;
+    }
+}
+#popForm{
+  .modal-footer {
+      border-top: 0px solid #e9ecef;
+  }
+  .modal-body {
+      position: relative;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 0rem 2.5rem;
+  }
+  .modal-header.popover-header{
+    padding: 25px!important;
+    background-color: white;
+    border: 0px;
+    h3{
+      color: $primaryColor;
+      margin-top: 20px;
+    }
+  }
+}
+.footer-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    p,
+    > .wpcf7-form-control-wrap {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 24%;
+      flex: 1 0 24%;
+      padding: 0rem 0.75rem;
+      margin-bottom: 0;
+    }
+    .input-name,
+    .input-email {
+        flex-basis: 50%;
+    }
+    .submit-container {
+        flex: 1 0 50%;
+        padding: 0rem 0.75rem;
+        margin-top: 1.5rem;
+        .button{
+          padding: 20px 30px;
+        }
+        // submit button container inserted by CF7
+        > p {
+            flex: 0 0 27%;
+        }
+    }
+    // captcha wrapper inserted by contact form 7
+    > .wpcf7-form-control-wrap {
+        // outline: 1px solid black;
+        flex-basis: 0;
+        position: relative;
+        width: 194px;
+        height: 49px;
+        padding: 0;
+        margin: 0 0 0 5px;
+    }
+    // reCaptcha
+    .footer-recaptcha {
+        transform: scale(0.83);
+        transform-origin: 0 0;
+        float: right;
+        margin-right: -50px;
+    }
+    iframe {
+        position: relative;
+    }
+    select,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="password"],
+    input[type="number"],
+    input[type="search"],
+    textarea {
+        font-size: 2rem;
+        border-width: 2px;
+        border-color: #fff;
+        background-color: white;
+        height: 6rem;
+        color: $darkGray;
+        border: 1px solid $darkGray;
+        margin-bottom: 2rem;
+    }
+    option {
+        color: $darkGray;
+    }
+    ::-webkit-input-placeholder {
+        color: $darkGray;
+    }
+    div.wpcf7-response-output {
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .footer-form {
+        p {
+            flex-basis: 23%
+        }
+        > .wpcf7-form-control-wrap { // recaptcha container
+            margin: 24px 1050px;
+            width: 193px;
+            outline: none;
+            flex: 0 1 100%;
+        }
+        .submit-container {
+            margin-top: 0;
+            flex: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-contact-container {
+        .container {
+            width: 100% !important;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .footer-form {
+        p {
+            flex-basis: 47%;
+        }
+    }
+}
+
+@media screen and (max-width: 459px) {
+    .submit-container {
+        p {
+            flex-basis: 100% !important;
+            text-align: center;
+        }
+    }
+
+    .footer-form {
+        p {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .footer-form {
+        > .wpcf7-form-control-wrap {
+            // margin: 32px 24px 0 0;
+            // outline: none;
+        }
+        .submit-container {
+            // flex: 1 0 100%;
+        }
+    }
+}

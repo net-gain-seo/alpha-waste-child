@@ -1,0 +1,149 @@
+.blog-content {
+    padding: 3rem 0;
+    p {
+        margin-bottom: 1.5rem;
+    }
+}
+.blog-sidebar{
+    padding-top: 40px;
+}
+.blog-listing {
+    article {
+        border-bottom: 2px solid $lightGray;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    article:last-child {
+        border-bottom: 0px solid $lightGray;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    h1 {
+        margin-bottom: 2rem;
+        color: $secondaryColor;
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+    p{
+      font-size: 2rem;
+    }
+    .more-link {
+        color: $primaryColor;
+        &:hover {
+            color: $secondaryColor;
+        }
+    }
+}
+
+.single-post {
+    .blog-content {
+        article {
+            padding-bottom: 2rem;
+            padding-right: 2rem;
+
+        }
+    }
+}
+.post-title{
+  font-size: 2.2rem;
+  a{
+    color: $primaryColor;
+    font-size: 2.2rem;
+  }
+  a:hover{
+    color: $secondaryColor;
+  }
+}
+.blog-sidebar {
+    h2 {
+      font-weight: normal;
+      font-family: inherit;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: $primaryColor;
+    }
+    .cat-item {
+
+    }
+    ul{
+      margin: 0px;
+      li{
+
+        a{
+          color: $primaryColor;
+        }
+      }
+    }
+}
+
+.next-prev {
+    margin-top: 1.5rem;
+    display: flex;
+    justifty-content: space-between;
+    .next,
+    .prev {
+        flex: 0 0 50%;
+        a {
+            display: flex;
+            align-items: baseline;
+        }
+    }
+    .next {
+        padding-left: 1rem;
+        text-align: right;
+        a {
+            justify-content: flex-end;
+            i {
+                padding-left: 1rem;
+            }
+        }
+    }
+    .prev {
+        padding-right: 1rem;
+        text-align: left;
+        a {
+            i {
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .blog-sidebar {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid $lightGray;
+    }
+    .blog-content {
+        .row {
+            margin: 0;
+        }
+    }
+    .single-post {
+        .blog-content {
+            article {
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+    }
+
+    .alignright,
+    .alignleft {
+        float: none !important;
+        display: block;
+        margin: 0 auto 1.5rem auto !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .single-post {
+        .blog-content {
+            article {
+                // padding: 1.5rem;
+            }
+        }
+    }
+}

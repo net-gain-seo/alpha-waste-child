@@ -1,0 +1,136 @@
+/** Product Line Carousel */
+.product-line-wrap {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    h2 {
+        font-family: 'Anton', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: $secondaryColor;
+        margin-bottom: 2.5rem;
+    }
+    .slick-product-prev{
+      left: -50px;
+      position: relative;
+      float: left;
+    }
+    .slick-product-next{
+      right: -50px;
+      position: relative;
+      float: right;
+    }
+    .slick-product-prev, .slick-product-next {
+        position: relative;
+        -webkit-transform: translateY(-180%);
+        transform: translateY(-180%);
+        font-size: 9rem;
+        color: #BAAD00;
+    }
+}
+.product-line {
+    display: none;
+    .slick-track {
+        display: flex;
+        align-items: stretch;
+    }
+    .slick-list {
+        width: 100%;
+        margin: auto;
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        min-width: 224px;
+        max-width: 224px;
+        margin: 1rem 4rem;
+        background: $darkGray;
+        &:hover {
+            h3 {
+                &:after {
+                    transform: translateX(80%);
+                }
+            }
+        }
+    }
+    h3 {
+        font-family: 'Anton', sans-serif;
+        padding: 1rem 1rem;
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 2.7rem;
+        height: 50px;
+        line-height: 30px;
+        &:after {
+            content: "\f101";
+            font-family: "fontawesome";
+            position: absolute;
+            bottom: 20px;
+            transform: translateX(50%);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+}
+
+.home .product-line-wrap h2 {
+    display: none;
+}
+
+.slick-product-prev,
+.slick-product-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 9rem;
+    color: $secondaryColor;
+    &:focus {
+        color: darken($secondaryColor,10%);
+    }
+    &:hover {
+        color: $primaryColor;
+    }
+}
+.slick-product-next {
+    right: 0;
+}
+
+.slick-home-next,
+.slick-home-prev {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'Raleway', sans-serif;
+    background: none;
+    cursor: pointer;
+    padding: 2rem 1.5rem;
+    padding-top: 1rem;
+    margin: 0px;
+    text-align: center;
+    height: auto;
+    vertical-align: top;
+    float: left;
+    font-size: 6rem;
+    font-weight: 100;
+    line-height: 0.5 !important;
+    background-color: transparent;
+    border: 2px solid #aba1a0;
+    color: #aba1a0 !important;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    &:hover {
+        box-shadow: 0 0 8px rgba(black,0.3);
+        background-color: rgba(white,0.2);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(black,0.15);
+        // box-shadow: none;
+    }
+}
+.slick-home-prev {
+    left: 20px;
+}
+.slick-home-next {
+    right: 20px;
+}
