@@ -45,7 +45,7 @@ $terms = get_the_terms( $post->ID, 'product_cat' );
           <p class="producttagline"><?php echo get_post_meta( $post->ID, '_tag_line', true ); ?></p>
           <p>SKU: <?php echo get_post_meta( $post->ID, '_sku', true ); ?></p>
           <p>Are you looking for a larger quantity?</p>
-          <p><a href="javascript:void(0);" class="button" data-toggle="modal" data-target="#popForm">GET A QUOTE</a></p>
+          <p><a href="javascript:void(0);" class="button" data-toggle="modal" data-target="#bulkForm">GET A QUOTE</a></p>
             <?php the_content(); ?>
         </div>
     </div>

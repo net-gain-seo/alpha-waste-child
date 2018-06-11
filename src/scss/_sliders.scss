@@ -164,6 +164,41 @@
     max-width: 88%;
     margin: auto;
 }
+#testimonials{
+  .slick-dots{
+    text-align: center;
+    li{
+      display: inline-block;
+      cursor: pointer;
+      margin-top: 4rem;
+      button{
+        background-color: #83BE26;
+        height: 17px;
+        width: 17px;
+        font-size: 0px;
+        border: 0px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    li.slick-active{
+      button{
+        background-color: white;
+      }
+    }
+  }
+}
+.clienttestimonials{
+  h3{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+  }
+  .slick-testimonial-prev, .slick-testimonial-next{
+      display: none!important;
+  }
+}
 
 
 /*****************Carousel*******************************/

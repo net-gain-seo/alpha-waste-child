@@ -101,6 +101,16 @@ body.modal-open{
 .col *:last-child {
     margin-bottom: 0;
 }
+
+
+
+.wpcf7-response-output{
+  float: left;
+  width: 100%;
+  margin: 0!important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 @media screen and (max-width: 575px) {
     html {
         font-size: 11px; // rem's will scale down

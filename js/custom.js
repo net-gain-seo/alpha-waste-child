@@ -73,6 +73,7 @@
     $(document).ready(function() {
         $('#testimonials').slick({
             autoplay: true,
+            dots: true,
             autoplaySpeed: 6000,
             fade: true,
             prevArrow: $(".slick-testimonial-prev"),

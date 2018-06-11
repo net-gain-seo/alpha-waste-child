@@ -6,6 +6,7 @@
             <div class="social">
                 <a href="https://www.facebook.com/AlphaWasteSolutions/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebookicon.png" width="45px" alt=""></a>
                 <a href="https://www.instagram.com/alphawaste_solutions/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/instagramicon.png" width="45px" alt=""></a>
+                <a href="https://ca.linkedin.com/company/alpha-waste-solutions-limited" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedinicon.png" width="45px" alt=""></a>
             </div>
         </div>
         <div class="f-item phone">
@@ -21,7 +22,7 @@
           Maidstone Road, Rochester,<br/>
           Kent   ME1 3QY</p>
         </div>
-        <div class="f-item copyright">Copyright &copy; <?php echo date("Y"); ?> Alpha Waste. All rights reserved.</div>
+        <div class="f-item copyright">Copyright &copy; <?php echo date("Y"); ?> Alpha Waste. All rights reserved | <a href="/~alphawaste/privacy-policy/" class="whiteText" alt="Privacy Policy">Privacy Policy</a></div>
 
         <!---div class="f-item netgain">Website Designed by <a href="http://www.netgainseo.com/" target="_blank"><img src="<?php // bloginfo('template_url'); ?>/img/netgain.png" alt=""></a></div------>
     </div>
@@ -44,6 +45,26 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade popover-form" id="bulkForm" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header popover-header">
+                <h3 class="modal-title">REQUEST BULK ORDER</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <?php echo do_shortcode( '[contact-form-7 id="984" title="Bulk Order Form"]' ); ?>
+            </div>
+            <div class="modal-footer hidden-sm-up">
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <a href="#" class="scrollToTop">&uarr;</a>
 <div id="refContainer" class="container" style="visibility: hidden;"></div>
 <div id="openNavOverlay"></div>

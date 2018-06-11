@@ -369,7 +369,7 @@ function woocommerce_shortcode_display_all_products($args)
 }
 add_filter('woocommerce_shortcode_products_query', 'woocommerce_shortcode_display_all_products');
 
-
+/////Changing Cart text to Basket
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );    // 2.1 +
 function woo_custom_cart_button_text() {
 return __( 'ADD TO BASKET', 'woocommerce' );
@@ -380,6 +380,8 @@ add_filter( 'wc_empty_cart_message', 'custom_wc_empty_cart_message' );
 function custom_wc_empty_cart_message() {
   return 'Your basket is currently empty.';
 }
+
+
 
 
 function custom_excerpt_length( $length ) {

@@ -90,8 +90,8 @@
     display: none!important;
   }
   .price{
-        margin-left: 20px!important;
-        margin-bottom: 0!important;
+        margin-left: 2rem!important;
+        margin-bottom: 1rem!important;
   }
   .woocommerce-variation-price{
     .price{
@@ -525,6 +525,39 @@ ul.products li.product:hover{
 .producttagline{
   width: 60%;
 }
+.stock {
+  display: none!important;
+}
+.price{
+  .woocommerce-Price-amount:last-child{
+    ::before{
+      content: '';
+      font-weight: bold;
+      color: $secondaryColor;
+      font-size: 0rem;
+      margin-right: 0px;
+    }
+  }
+  .woocommerce-Price-amount{
+    ::before{
+      content: 'Starting At:';
+      font-weight: bold;
+      color: $secondaryColor;
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+  }
+  .woocommerce-Price-amount:first-child{
+    ::before{
+      content: 'Starting At:';
+      font-weight: bold;
+      color: $secondaryColor;
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+  }
+}
+
 @media only screen and (max-width: $screen-md-min) {
   .woocommerce .col-1 {
       float: left;

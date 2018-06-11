@@ -146,7 +146,7 @@ add_shortcode('pcard_footer','pcard_footer');
  * Testimonial slider
  *
  */
-function testimonial_slider($atts) {
+function testimonial_slider_code($atts) {
     extract( shortcode_atts( array(
         'class' => ''
       ), $atts ) );
@@ -176,7 +176,7 @@ function testimonial_slider($atts) {
 
     return $return;
 }
-add_shortcode('testimonials','testimonial_slider');
+add_shortcode('testimonials','testimonial_slider_code');
 
 
 

@@ -10,7 +10,13 @@
 	    <?php
     	    if( has_post_thumbnail() ) {
     	        the_post_thumbnail();
-    	    } else {
+    	    } elseif(is_category('local-authority')) {
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Local-Authority-banner.jpg" />';
+          }
+          elseif(is_category('paper-sacks')) {
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Paper-Sacks-banner.jpg" />';
+          }
+          else {
     	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/05/BlackPotBanner-1.jpg" />';
     	    }
 

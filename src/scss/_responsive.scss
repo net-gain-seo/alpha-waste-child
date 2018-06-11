@@ -34,10 +34,9 @@
           }
       }
   }
-  //.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-  //    margin: 0 3% 3% 0!important;
-  //    width: 47%!important;
-  //}
+  .productcategories .productsection .col h4 {
+      margin-top: -25px;
+  }
   .meetourteamsection h3 {
       margin-top: 0px;
   }
@@ -533,6 +532,9 @@
 }
 
 @media only screen and (max-width: $screen-sm-max) {
+  .productcategories .productsection .col h4 {
+      margin-top: -55px;
+  }
   .sticky-header .site-header {
       height: 130px;
   }
