@@ -10,13 +10,23 @@
 	    <?php
     	    if( has_post_thumbnail() ) {
     	        the_post_thumbnail();
-    	    } elseif(is_category('local-authority')) {
-    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Local-Authority-banner.jpg" />';
-          }
-          elseif(is_category('paper-sacks')) {
+    	    } elseif( is_product_category( 'paper-sacks' ) ) {
     	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Paper-Sacks-banner.jpg" />';
-          }
-          else {
+          } elseif( is_product_category( 'plastic-bins' ) ) {
+              echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Plastic-Bins.jpg" />';
+          }  elseif( is_product_category( 'metal-bins' ) ) {
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Metal-Bins-banner.jpg" />';
+          }  elseif( is_product_category( 'security-weee' ) ) {
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Security-BIns-WEEE-Banner.jpg" />';
+          }  elseif( is_product_category( 'wheeled-bins' ) ) {
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Wheeled-Bins-Banner.jpg" />';
+          }  elseif( is_product_category( 'kidzone-for-schools' ) ) {
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/05/BlackPotBanner-1.jpg" />';
+          } elseif( is_product_category( 'specialty-bins' ) ) {
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Specialty-Bins-Banner.jpg" />';
+          } elseif( is_product_category( 'local-authority' ) ) {
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Local-Authority-banner.jpg" />';
+          } elseif( is_product_category( '' ) ) {
     	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/05/BlackPotBanner-1.jpg" />';
     	    }
 
