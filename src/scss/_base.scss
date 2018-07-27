@@ -61,6 +61,13 @@ p{
   line-height: 1.2;
   margin-bottom: 2rem;
 }
+pre{
+  font-family: 'Lato', 'Oswald', sans-serif;
+  font-size: $fsBody;
+  ul{
+    display: inline-table;
+  }
+}
 .title {
     font-family: 'Oswald', sans-serif;
     font-size: $fsTitle;

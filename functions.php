@@ -228,11 +228,6 @@ function woo_new_product_tab( $tabs ) {
         'priority'  => 50,
         'callback'  => 'woo_new_product_tab_content_spec'
     );
-    $tabs['shipping_tab'] = array(
-        'title'     => __( 'Shipping', 'woocommerce' ),
-        'priority'  => 49,
-        'callback'  => 'woo_new_product_tab_content_shipping'
-    );
     $tabs['specifications_tab'] = array(
         'title'     => __( 'Specifications', 'woocommerce' ),
         'priority'  => 48,
@@ -248,31 +243,42 @@ function woo_new_product_tab( $tabs ) {
 function woo_new_product_tab_content_spec()  {
     // The new tab content
     $post = get_the_ID();
-    echo '<h3>Download The Spec Sheet Below:</h3>';
     echo '<a href="'.get_post_meta( $post, '_spec_sheet', true ).'" target="_blank"/><p><img src="'.get_bloginfo('template_url').'/img/pdficon.png" class="pdficon" width="30"/>Download the '.get_the_title().' Spec Sheet</p>';
-}
-function woo_new_product_tab_content_shipping()  {
-    // The new tab content
-    $post = get_the_ID();
-    global $product;
-    $dimensions = $product->get_dimensions();
-    echo '<div class="dimensions"><h3>Shipping Dimensions:</h3><p><strong>(</strong><strong>Height:</strong> ' . $product->get_height() . get_option( 'woocommerce_dimension_unit' );
-    echo ' <strong>|</strong> <strong>Width:</strong> ' . $product->get_width() . get_option( 'woocommerce_dimension_unit' );
-    echo ' <strong>|</strong> <strong>Length:</strong> ' . $product->get_length() . get_option( 'woocommerce_dimension_unit' );
-    echo '<strong>)</strong><p><strong>Weight:</strong> ' . $product->get_weight() . get_option( 'woocommerce_weight_unit' );
-    echo '</div>';
-    echo '<p>'.get_post_meta( $post, 'shipping_product_data', true ).'</p>';
 }
 function woo_new_product_tab_content_specifications()  {
     // The new tab content
     $post = get_the_ID();
-    echo '<h3>Specifications:</h3>';
-    echo '<p>'.get_post_meta( $post, '_spec_field', true ).'</p>';
+    echo '<pre>'.get_post_meta( $post, '_spec_field', true ).'</pre>';
 }
+function woo_new_product_tab_content_specifications_Test()  {
+    // The new tab content
+    global $woocommerce, $product, $post;
+    $post = get_the_ID();
+    // test if product is variable
+    echo '<div class="dimensions">';
+    if ($product->is_type( 'variable' )){
+        $available_variations = $product->get_available_variations();
+        foreach ($available_variations as $key => $value){
+          echo '<p><strong>(</strong><strong>Height:</strong> ' . $product->get_height() . get_option( 'woocommerce_dimension_unit' );
+          echo ' <strong>|</strong> <strong>Width:</strong> ' . $product->get_width() . get_option( 'woocommerce_dimension_unit' );
+          echo ' <strong>|</strong> <strong>Length:</strong> ' . $product->get_length() . get_option( 'woocommerce_dimension_unit' );
+          echo '<strong>)</strong><p><strong>Weight:</strong> ' . $product->get_weight() . get_option( 'woocommerce_weight_unit' );
+          echo '<p>'.get_post_meta( $post, 'shipping_product_data', true ).'</p>';
+        }
+    }
+    else{
+      echo ' <p><strong>(</strong><strong>Height:</strong> ' . $product->get_height() . get_option( 'woocommerce_dimension_unit' );
+      echo ' <strong>|</strong> <strong>Width:</strong> ' . $product->get_width() . get_option( 'woocommerce_dimension_unit' );
+      echo ' <strong>|</strong> <strong>Length:</strong> ' . $product->get_length() . get_option( 'woocommerce_dimension_unit' );
+      echo '<strong>)</strong><p><strong>Weight:</strong> ' . $product->get_weight() . get_option( 'woocommerce_weight_unit' );
+      echo '<p>'.get_post_meta( $post, 'shipping_product_data', true ).'</p>';
+    }
+    echo '</div>';
+}
+
 function woo_new_product_tab_content_features()  {
     // The new tab content
     $post = get_the_ID();
-    echo '<h3>Features:</h3>';
     echo '<p>'.get_post_meta( $post, 'wo_features_field', true ).'</p>';
 }
 
@@ -381,6 +387,11 @@ function custom_wc_empty_cart_message() {
   return 'Your basket is currently empty.';
 }
 
+add_filter( 'woocommerce_order_button_text', 'woo_custom_order_button_text' );
+
+function woo_custom_order_button_text() {
+    return __( 'Place Quote', 'woocommerce' ); 
+}
 
 
 

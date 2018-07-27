@@ -27,7 +27,7 @@
           } elseif( is_product_category( 'local-authority' ) ) {
     	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Local-Authority-banner.jpg" />';
           } elseif( is_product_category( '' ) ) {
-    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/05/BlackPotBanner-1.jpg" />';
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/07/sub-page-header.jpg" />';
     	    }
 
             $mast_title       = get_post_meta( get_the_ID(), 'mast_title', true );

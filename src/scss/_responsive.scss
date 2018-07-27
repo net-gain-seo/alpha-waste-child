@@ -9,6 +9,9 @@
       padding-bottom: 40px;
       padding-top: 40px;
   }
+  .slider-content .inner-content {
+      top: 120px;
+  }
 }
 
 @media only screen and (max-width: $screen-lg-min) {
@@ -90,6 +93,7 @@
   }
   .slider-content .inner-content {
       left: 100px;
+      top: 80px;
       p, h1, h3 {
         margin-bottom: 2rem;
       }
@@ -168,15 +172,14 @@
     margin-bottom: 0.5rem;
     font-size: 2.2rem;
   }
-  .mast h1 {
-      font-size: 3.5rem;
-      margin-bottom: 0.5rem;
-  }
 
 }
 @media only screen and (max-width: $screen-md-min) {
   .producttagline{
     width: 100%;
+  }
+  .blog-sidebar {
+      padding-bottom: 4rem;
   }
   .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
       float: left;
@@ -398,7 +401,7 @@
     background-size: cover;
   }
   .site-header {
-      height: 200px;
+      height: 210px;
   }
   .sticky-header .site-header {
       height: 180px;
@@ -510,25 +513,25 @@
       display: inline-block;
       margin-right: 0px;
   }
-    .related .products{
-       li:last-child{
-        float: none!important;
-        clear: none !important;
-        display: inline-block;
-        margin-right: initial;
-      }
+  .related .products{
+     li:last-child{
+      float: none!important;
+      clear: none !important;
+      display: inline-block;
+      margin-right: initial;
     }
-    .contactpage{
-      .padding100 {
-          padding: 40px 0px;
-      }
-      .paddingtop40 {
-          padding-top: 0px;
-      }
+  }
+  .contactpage{
+    .padding100 {
+        padding: 40px 0px;
     }
-    footer .hours {
-        margin-top: 1rem;
+    .paddingtop40 {
+        padding-top: 0px;
     }
+  }
+  footer .hours {
+      margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: $screen-sm-max) {
@@ -536,7 +539,7 @@
       margin-top: -55px;
   }
   .sticky-header .site-header {
-      height: 130px;
+      height: 140px;
   }
   .woocommerce ul.products[class*=columns-] li.product:nth-child(2n), .woocommerce-page ul.products[class*=columns-] li.product:nth-child(2n) {
       float: none;
@@ -664,6 +667,9 @@
   .mast.page-mast .mast-overlay, .mast.product-mast .mast-overlay {
     padding: 2rem 3rem;
   }
+  .mast.page-mast.greenbar .mast-overlay, .mast.product-mast.greenbar .mast-overlay {
+    padding: 4rem 3rem;
+  }
   .small.greenbar{
      .mast-overlay h1, .mast-overlay h1 {
         font-size: 3rem;
@@ -680,6 +686,9 @@
 }
 
 @media only screen and (max-width: $screen-xsm-max) {
+    .summary {
+        max-width: 100%;
+    }
     .single-product{
       .mast.page-mast .mast-overlay h1, .mast.product-mast .mast-overlay h1 {
           padding: 4rem 0rem;
