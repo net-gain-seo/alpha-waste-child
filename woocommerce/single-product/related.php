@@ -24,7 +24,7 @@ if ( $related_products ) : ?>
 
 	<section class="related products">
 
-		<h2><?php esc_html_e( 'Suggested Products', 'woocommerce' ); ?></h2>
+		<h2><?php esc_html_e( 'Other Alpha Waste Solutions Products', 'woocommerce' ); ?></h2>
 
 		<?php woocommerce_product_loop_start(); ?>
 

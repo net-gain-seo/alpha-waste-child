@@ -22,7 +22,7 @@
           Maidstone Road, Rochester,<br/>
           Kent   ME1 3QY</p>
         </div>
-        <div class="f-item copyright">Copyright &copy; <?php echo date("Y"); ?> Alpha Waste. All rights reserved | <a href="/~alphawaste/privacy-policy/" class="whiteText" alt="Privacy Policy">Privacy Policy</a></div>
+        <div class="f-item copyright">Copyright &copy; <?php echo date("Y"); ?> Alpha Waste. All rights reserved | <a href="/privacy-policy/" class="whiteText" alt="Privacy Policy">Privacy Policy</a> | <a href="/general-trading-terms-conditions/" class="whiteText" alt="general trading terms conditions">Terms & Conditions</a></div>
 
         <!---div class="f-item netgain">Website Designed by <a href="http://www.netgainseo.com/" target="_blank"><img src="<?php // bloginfo('template_url'); ?>/img/netgain.png" alt=""></a></div------>
     </div>

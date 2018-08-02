@@ -46,7 +46,7 @@
     </div>
 </div>
     <?php echo do_shortcode( '
-[container fluid="true" background_image="http://209.126.119.193/~alphawaste/wp-content/uploads/2018/05/TrashBinBanner.jpg" class="productlinebanner"]
+[container fluid="true" background_image="/wp-content/uploads/2018/05/TrashBinBanner.jpg" class="productlinebanner"]
 
 [element6 class="opacitypagebanner"]
 

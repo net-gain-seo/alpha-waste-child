@@ -44,6 +44,8 @@ $terms = get_the_terms( $post->ID, 'product_cat' );
           <h3><?php the_title(); ?></h3>
           <p class="producttagline"><?php echo get_post_meta( $post->ID, '_tag_line', true ); ?></p>
           <p>Product ID: <?php echo get_post_meta( $post->ID, '_sku', true ); ?></p>
+          <p class="producttagline"><small>Minimum orders may apply. All orders are subject to approval. Prices exclude VAT. Delivery cost is included in UK mainland orders only.</small></p>
+          <p>&nbsp;</p>
           <p>Are you looking for a larger quantity?</p>
           <p><a href="javascript:void(0);" class="button" data-toggle="modal" data-target="#bulkForm">GET A QUOTE</a></p>
             <?php the_content(); ?>
