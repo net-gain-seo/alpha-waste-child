@@ -15,7 +15,7 @@
           } elseif( is_product_category( 'plastic-bins' ) ) {
               echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Plastic-Bins.jpg" />';
           }  elseif( is_product_category( 'metal-bins' ) ) {
-    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Metal-Bins-banner.jpg" />';
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/09/metal-banner.jpg" />';
           }  elseif( is_product_category( 'security-weee' ) ) {
     	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Security-BIns-WEEE-Banner.jpg" />';
           }  elseif( is_product_category( 'wheeled-bins' ) ) {
@@ -25,7 +25,7 @@
           } elseif( is_product_category( 'specialty-bins' ) ) {
     	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Specialty-Bins-Banner.jpg" />';
           } elseif( is_product_category( 'local-authority' ) ) {
-    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/06/Local-Authority-banner.jpg" />';
+    	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/09/local-authority-banner.jpg" />';
           } elseif( is_product_category( '' ) ) {
     	        echo '<img src="'. home_url() . '/wp-content/uploads/2018/07/sub-page-header.jpg" />';
     	    }

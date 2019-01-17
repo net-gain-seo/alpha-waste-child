@@ -390,7 +390,7 @@ function custom_wc_empty_cart_message() {
 add_filter( 'woocommerce_order_button_text', 'woo_custom_order_button_text' );
 
 function woo_custom_order_button_text() {
-    return __( 'Place Quote', 'woocommerce' ); 
+    return __( 'Place Quote', 'woocommerce' );
 }
 
 

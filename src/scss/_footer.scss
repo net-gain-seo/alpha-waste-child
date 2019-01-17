@@ -11,7 +11,15 @@ footer{
       font-family: 'Oswald', sans-serif;
       color: white;
       float: right;
-      margin-top: 40px;
+      margin-top: -20px;
+      clear: both;
+    }
+    a.email{
+      margin-top: 10px;
+      font-size: 2.7rem;
+      color: white;
+      float: right;
+      clear: both;
     }
   }
   .hours{
