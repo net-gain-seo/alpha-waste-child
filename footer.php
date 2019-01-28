@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="f-item phone">
-            <a href="tel:101634838540">Tel: 01634 838 540</a><br/>
+            <a href="tel:4401634838540">Tel: 01634 838 540</a><br/>
             <a class="email" href="mailto:enquiries@awsltduk.com">enquiries@awsltduk.com</a>
         </div>
         <div class="f-item hours">

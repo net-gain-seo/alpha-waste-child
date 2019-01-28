@@ -17,7 +17,8 @@
         <div class="header-block">
             <div class="inner-block">
                 <div class="topbar">
-                  <div class="phone"><a href="tel:101634838540">Call: 01634 838 540</a></div>
+                  <div class="phone"><a href="tel:+4401634838540">Call: 01634 838 540</a></div>
+                  <div class="email"><a href="mailto:enquiries@awsltduk.com">enquiries@awsltduk.com</a></div>
                   <div class="cart"><a href="<?php echo home_url(); ?>/basket"><img src="<?php bloginfo('template_url'); ?>/img/BasketIcon.png" alt="Cart" width="40px" height="35px"/>BASKET</a></div>
                 </div>
                 <div class="header-nav">
@@ -27,7 +28,7 @@
                                 <i class="fa fa-bars"></i>
                                 <span>MENU</span>
                             </a>
-                            <a href="tel:101634838540" class="nav-phone">
+                            <a href="tel:+4401634838540" class="nav-phone">
                                 <i class="fa fa-phone"></i>
                                 <span>CALL</span>
                             </a>
