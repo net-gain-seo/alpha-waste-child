@@ -228,7 +228,12 @@ function aw_productbar( $args = array()) {
 	$pb .= '<div class="mast product-mast small greenbar">';
 		$pb .= '<div class="container mast-overlay">';
 			$category_name = $term->name;
-			$pb .= '<h1 class="categorytitle">'. $category_name .'</h1>';
+            if (isset($term->name)){
+                $pb .= '<h2 class="categorytitle">'. $category_name .'</h2>';
+            }
+			else {
+                $pb .= '<h2 class="categorytitle">All Products</h2>';
+            }
 			$category_thumbnail = get_woocommerce_term_meta($term->term_id, "thumbnail_id", true);
 			$image = wp_get_attachment_url($category_thumbnail);
 			$pb .= '<img class="absolute category-image" src="'.$image.'">';
