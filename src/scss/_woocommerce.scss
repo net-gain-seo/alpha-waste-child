@@ -265,6 +265,9 @@ body.single-product{
     margin-left: 10px;
     margin-top: -5px;
     margin-bottom: 0px;
+    .widgettitle {
+      display: none !important;
+    }
   }
   .woocommerce-ordering-title{
     color: white;
