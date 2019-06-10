@@ -212,9 +212,10 @@ select {
         flex-basis: 50%;
     }
     .submit-container {
-        flex: 1 0 50%;
+        flex: 1 0 100%;
         padding: 0rem 0.75rem;
         margin-top: 1.5rem;
+        text-align: center;
         .button{
           padding: 20px 30px;
         }

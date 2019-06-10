@@ -93,7 +93,7 @@ body.modal-open{
 
 .wpcf7-not-valid-tip,
 .wpcf7-validation-errors {
-    font-size: 0.9rem !important;
+    font-size: 1.4rem !important;
 }
 .sticky-header .modal {
     top: 70px;
@@ -102,7 +102,9 @@ body.modal-open{
     margin-bottom: 0;
 }
 
-
+.grecaptcha-badge {
+  z-index: 99997;
+}
 
 .wpcf7-response-output{
   float: left;
