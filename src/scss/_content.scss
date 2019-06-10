@@ -214,11 +214,11 @@
   opacity: 0.8;
   text-decoration: none;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 80px;
+  right: 10px;
   display: none;
   cursor: pointer;
-  z-index: 9999999999999999999;
+  z-index: 99997;
 }
 .scrollToTop:hover{
   color: white;
