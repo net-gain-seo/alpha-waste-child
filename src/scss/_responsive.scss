@@ -55,6 +55,9 @@
       display: block;
       width: 100%;
   }
+  .greenbar .category-image {
+    top: -40px;
+  }
   .close-nav {
     position: fixed;
     top: 0;
@@ -370,6 +373,9 @@
           }
       }
       .header-block {
+          .topbar {
+            padding: 3rem 0;
+          }
           .title {
               font-size: 1.5rem;
           }
@@ -393,9 +399,12 @@
           float: left;
           img {
               max-width: 110px;
-              padding: 20px 0px;
+              padding: 10px 0px;
           }
       }
+  }
+  .sticky-header .flex-header .header-block .topbar {
+    padding: 2rem 0;
   }
   .mobilecover{
     background-size: cover;
@@ -427,7 +436,7 @@
               max-width: 100%;
               h1 {
                   font-size: 4rem; // 35px
-                  margin-bottom: 1.5rem;
+                  margin-bottom: 0rem;
               }
           }
           p:last-child {
@@ -685,7 +694,8 @@
 @media only screen and (max-width: $screen-xsm-max) {
     .single-product{
       .mast.page-mast .mast-overlay h1, .mast.product-mast .mast-overlay h1 {
-          padding: 4rem 0rem;
+          padding-top: 3rem;
+          margin: 0;
       }
     }
     .sticky-header{
@@ -738,8 +748,11 @@
         padding: 10px 0px;
         padding-bottom: 0px;
     }
-  .nav-phone, .nav-contact{
+  .nav-contact{
     display: none;
+  }
+  .nav-phone span, .nav-toggle span{
+      display: none;
   }
   .p-products{
     .pcard-img{
@@ -747,10 +760,6 @@
     }
   }
   body:not(.sticky-header) {
-    .nav-phone, .nav-contact{
-      display: block;
-      font-size: 1.5rem;
-    }
       .site-header {
           height: auto;
           padding: 0 1rem;
@@ -802,9 +811,6 @@
     .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
         margin: 0 0% 5% 0 !important;
         width: 100% !important;
-    }
-    .nav-phone, .nav-contact{
-      display: none!important;
     }
     .cleanenviromentbar .cleantitle {
       font-size: 3.5rem;
