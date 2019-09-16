@@ -27,7 +27,8 @@ $terms = get_the_terms( $post->ID, 'product_cat' );
 ?>
 <div class="mast product-mast greenbar">
   <div class="container mast-overlay">
-    <h1><?php echo wc_get_product_category_list($product->get_id()) ?></h1>
+    <h1><?php the_title(); ?></h1>
+    <span class="category-list"><?php echo wc_get_product_category_list($product->get_id()) ?></span>
     <?php foreach ( $terms as $term ){
           $category_name = $term->name;
           $category_thumbnail = get_woocommerce_term_meta($term->term_id, 'thumbnail_id', true);
@@ -41,7 +42,6 @@ $terms = get_the_terms( $post->ID, 'product_cat' );
       <div class="row padding0">
         <div class="col col-lg-12 col-md-12 col-sm-12 col-xsm-12">
           <img src="<?php echo get_post_meta( $post->ID, '_banner_image', true ); ?>" width="100%" class="productbannerimage"/>
-          <h3><?php the_title(); ?></h3>
           <p class="producttagline"><?php echo get_post_meta( $post->ID, '_tag_line', true ); ?></p>
           <p>Price includes delivery and VAT*</p>
           <p>Product ID: <?php echo get_post_meta( $post->ID, '_sku', true ); ?></p>
