@@ -401,3 +401,14 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 include(TEMPLATEPATH.'/admin/custom_shortcodes.php');
+
+
+/*** HIDE PRODUCT PRICE */
+add_filter( 'woocommerce_get_price_html', function( $price ) {
+	if ( is_admin() ) return $price;
+
+	return '';
+} );
+
+add_filter( 'woocommerce_cart_item_price', '__return_false' );
+add_filter( 'woocommerce_cart_item_subtotal', '__return_false' );
