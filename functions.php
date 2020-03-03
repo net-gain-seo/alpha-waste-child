@@ -412,3 +412,25 @@ add_filter( 'woocommerce_get_price_html', function( $price ) {
 
 add_filter( 'woocommerce_cart_item_price', '__return_false' );
 add_filter( 'woocommerce_cart_item_subtotal', '__return_false' );
+
+
+
+function woocommerce_button_proceed_to_checkout() { ?>
+  <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward">
+  <?php esc_html_e( 'PROCEED TO QUOTE SUMMARY', 'woocommerce' ); ?>
+  </a>
+  <?php
+ }
+
+
+ function wc_billing_field_strings( $translated_text, $text, $domain ) {
+  switch ( $translated_text ) {
+      case 'Billing details' :
+          $translated_text = __( 'CONTACT INFORMATION', 'woocommerce' );
+          break;
+  }
+  return $translated_text;
+}
+add_filter( 'gettext', 'wc_billing_field_strings', 20, 3 );
+
+ 

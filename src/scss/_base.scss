@@ -258,3 +258,19 @@ table {
     width: 100%;
     text-align: center;
 }
+
+
+.woocommerce-checkout-review-order-table,
+.woocommerce-table--order-details{
+  tr{
+    th + th,
+    td + td,
+    th + td{
+      display: none;
+    }
+  }
+  .cart-subtotal,
+  .order-total{
+    display: none;
+  }
+}
